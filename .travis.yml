@@ -19,3 +19,11 @@ script:
 
   #SONARCLOUD
   - mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=vargasjuanj -Dsonar.login=$SONAR
+#Deploy https://calculadora-utn.herokuapp.com/api
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU
+  on:
+    branch: master
+  app: calculadora-utn
