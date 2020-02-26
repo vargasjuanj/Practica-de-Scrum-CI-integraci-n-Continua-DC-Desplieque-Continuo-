@@ -8,3 +8,14 @@ notifications:
   email:
     recipients:
       - juanjovargas443377@gmail.com
+# services:
+# - mysql
+# - mongodb
+# before_install:
+# - mysql -e 'CREATE DATABASE IF NOT EXISTS forge;'
+script:
+  #Test unitario y de integracion con cobertura (jacoco)
+  - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
+
+  #SONARCLOUD
+  - mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=vargasjuanj -Dsonar.login=$SONAR
