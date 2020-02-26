@@ -3,7 +3,10 @@
 > Plantilla con Spring básico (API, test) 
 
 ## Estado del Código
-
+[![Build Status](https://travis-ci.org/vargasjuanj/Calculadora.svg?branch=develop)](https://travis-ci.org/vargasjuanj/Calculadora)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ar.frm.utn%3Acalculadora&metric=alert_status)](https://sonarcloud.io/dashboard?id=ar.frm.utn%3Acalculadora)
+[![BCH compliance](https://bettercodehub.com/edge/badge/vargasjuanj/Calculadora?branch=develop)](https://bettercodehub.com/)
+[![Heroku broken](https://calculadora-utn.herokuapp.com/system/version-badge)](https://calculadora-utn.herokuapp.com/swagger-ui.html)
 ## Ecosistema
 * Java
 * Maven
