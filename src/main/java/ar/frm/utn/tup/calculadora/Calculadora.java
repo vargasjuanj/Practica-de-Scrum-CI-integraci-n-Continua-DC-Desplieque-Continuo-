@@ -7,25 +7,25 @@ public class Calculadora {
     public static float resultado2;
     public static void main(String[] args) {
     }
-    private static void divide(int operador1, int operador2) {
+    public static float divide(int operador1, int operador2) {
+    return 0;
+    }
+    public static int multiplica(int operador1, int operador2) {
+        return 0;
+    }
+    public static int resta(int operador1, int operador2) {
+        return 0;
+    }
+    public static int suma(int operador1, int operador2) {
+        return 0;
+    }
+    public static void preguntaOperadores()  {
 
     }
-    private static void multiplica(int operador1, int operador2) {
+    public static void preguntaOpcion()  {
 
     }
-    private static void resta(int operador1, int operador2) {
-
-    }
-    private static void suma(int operador1, int operador2) {
-
-    }
-    private static void preguntaOperadores()  {
-
-    }
-    private static void preguntaOpcion()  {
-
-    }
-    private static void imprimeMenu() {
+    public static void imprimeMenu() {
 
     }
 }
