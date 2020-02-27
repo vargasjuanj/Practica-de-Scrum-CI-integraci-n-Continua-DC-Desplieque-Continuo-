@@ -33,8 +33,9 @@ public class Calculadora {
         operador2=Integer.parseInt(br2.readLine());
     }
 
-    private static void preguntaOpcion()  {
-
+    private static void preguntaOpcion() throws IOException {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        opcion=Integer.parseInt(br.readLine());
     }
     private static void imprimeMenu() {
 
