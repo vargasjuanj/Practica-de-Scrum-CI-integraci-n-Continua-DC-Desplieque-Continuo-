@@ -11,7 +11,7 @@ public class Calculadora {
 
     }
     private static void multiplica(int operador1, int operador2) {
-
+        System.out.println("La multiplicación de "+operador1+" * "+operador2+" es "+(operador1*operador2));
     }
     private static void resta(int operador1, int operador2) {
 
