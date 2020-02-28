@@ -38,6 +38,7 @@ public class Calculadora {
 
 
         }
+>>>>>>> develop
     }
 
     public static float divide(int operador1, int operador2) {
