@@ -13,7 +13,10 @@ public class Calculadora {
     }
 
     public static float divide(int operador1, int operador2) {
-        return 0;
+        resultado2 = (float)operador1 / operador2;
+        System.out.println("La división de " + operador1 + " / " + operador2 + " es " + resultado2);
+
+        return resultado2;
     }
 
     public static int multiplica(int operador1, int operador2) {
