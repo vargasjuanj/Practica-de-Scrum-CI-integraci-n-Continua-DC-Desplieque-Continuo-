@@ -1,15 +1,15 @@
 package ar.frm.utn.tup.calculadora;
 
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Calculadora {
     public static int opcion, operador1, operador2, resultado;
     public static float resultado2;
 
     public static void main(String[] args) {
+imprimeMenu();
     }
 
     public static float divide(int operador1, int operador2) {
@@ -42,7 +42,14 @@ public class Calculadora {
     }
 
     public static void imprimeMenu() {
-
+        //Logger log= (Logger) LogManager.getLogger(this.getClass()); //Para métodos no estáticos.
+        Logger log= (Logger) LogManager.getLogger();
+        log.error("Menu Opciones");
+        log.warn("1. Suma");
+        log.debug("2. Resta");
+        log.info("3. Multiplicacion");
+        log.info("4. Division");
+        log.fatal("5. Salir");
     }
 }
 
