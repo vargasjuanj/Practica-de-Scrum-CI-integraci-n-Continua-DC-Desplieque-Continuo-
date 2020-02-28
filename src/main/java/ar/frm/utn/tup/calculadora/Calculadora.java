@@ -10,6 +10,11 @@ public class Calculadora {
 
     public static void main(String[] args) {
 imprimeMenu();
+        preguntaOpcion();
+        while(opcion!=5){
+            System.out.println("algo");
+        }
+        System.out.println("Fin de aplicacion");
     }
 
     public static float divide(int operador1, int operador2) {
