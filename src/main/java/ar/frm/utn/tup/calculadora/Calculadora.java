@@ -46,8 +46,13 @@ imprimeMenu();
         return resultado;
     }
 
-    public static void preguntaOperadores() {
-
+    public static void preguntaOperadores() throws IOException {
+        System.out.println("Operador 1: ");
+        BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+        operador1=Integer.parseInt(br1.readLine());
+        System.out.println("Operador 2: ");
+        BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
+        operador2=Integer.parseInt(br2.readLine());
     }
 
     public static void preguntaOpcion() throws IOException {
