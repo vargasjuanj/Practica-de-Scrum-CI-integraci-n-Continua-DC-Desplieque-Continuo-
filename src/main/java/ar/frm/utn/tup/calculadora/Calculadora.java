@@ -4,6 +4,10 @@ package ar.frm.utn.tup.calculadora;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Calculadora {
     public static int opcion, operador1, operador2, resultado;
     public static float resultado2;
@@ -46,8 +50,9 @@ imprimeMenu();
 
     }
 
-    public static void preguntaOpcion() {
-
+    public static void preguntaOpcion() throws IOException {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        opcion=Integer.parseInt(br.readLine());
     }
 
     public static void imprimeMenu() {
