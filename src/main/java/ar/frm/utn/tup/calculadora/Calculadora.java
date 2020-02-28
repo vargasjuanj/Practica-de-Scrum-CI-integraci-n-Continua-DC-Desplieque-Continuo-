@@ -32,6 +32,7 @@ public class Calculadora {
                     break;
                 default:
                     System.out.println("La opción ingresada no es valida.");
+
                     break;
             }
             System.out.println("");
