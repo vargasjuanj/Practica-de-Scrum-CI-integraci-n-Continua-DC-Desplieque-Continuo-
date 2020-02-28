@@ -13,7 +13,10 @@ imprimeMenu();
     }
 
     public static float divide(int operador1, int operador2) {
-        return 0;
+        resultado2 = (float) operador1 / operador2;
+        System.out.println("La división de " + operador1 + " / " + operador2 + " es " + resultado2);
+
+        return resultado2;
     }
 
     public static int multiplica(int operador1, int operador2) {
@@ -26,11 +29,17 @@ imprimeMenu();
     }
 
     public static int resta(int operador1, int operador2) {
-        return 0;
+        resultado = operador1 - operador2;
+        System.out.println("La resta de " + operador1 + " - " + operador2 + " es " + resultado);
+
+        return resultado;
     }
 
     public static int suma(int operador1, int operador2) {
-        return 0;
+        resultado = operador1 + operador2;
+        System.out.println("La suma de " + operador1 + " + " + operador2 + " es " + resultado);
+
+        return resultado;
     }
 
     public static void preguntaOperadores() {
