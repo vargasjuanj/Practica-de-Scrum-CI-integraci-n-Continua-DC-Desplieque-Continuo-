@@ -31,7 +31,7 @@ public class Calculadora {
                     divide(operador1, operador2);
                     break;
                 default:
-                    System.out.println("Opcion pulsada no valida");
+                    System.out.println("La tecla seleccionada no es válida");
                     break;
             }
             System.out.println("");
