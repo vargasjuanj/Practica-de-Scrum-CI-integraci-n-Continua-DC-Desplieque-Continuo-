@@ -38,4 +38,11 @@ public class CalculadoraTest {
         int result = this.calculadora.resta(10, 3);
         assertEquals(expected, result);
     }
+
+    @Test
+    public void testSuma() {
+        int expected = 40 + 31;
+        int result = this.calculadora.suma(40, 31);
+        assertEquals(expected, result);
+    }
 }
