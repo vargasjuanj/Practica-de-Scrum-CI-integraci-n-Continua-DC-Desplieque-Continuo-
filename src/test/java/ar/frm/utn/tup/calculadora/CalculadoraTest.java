@@ -26,9 +26,16 @@ public class CalculadoraTest {
     }
 
     @Test
-    public void testDivide(){
-        float expected = 8f/5;
+    public void testDivide() {
+        float expected = 8f / 5;
         float result = this.calculadora.divide(8, 5);
-        assertEquals(expected, result,0);
+        assertEquals(expected, result, 0);
+    }
+
+    @Test
+    public void testResta() {
+        int expected = 10 - 3;
+        int result = this.calculadora.resta(10, 3);
+        assertEquals(expected, result);
     }
 }
