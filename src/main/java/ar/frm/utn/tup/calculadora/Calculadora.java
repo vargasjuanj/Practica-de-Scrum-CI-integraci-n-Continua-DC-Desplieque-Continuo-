@@ -13,7 +13,31 @@ public class Calculadora {
     public static float resultado2;
 
     public static void main(String[] args) {
-imprimeMenu();
+        imprimeMenu();
+
+        while (opcion != 5) {
+
+            switch (opcion) {
+                case 1:
+                    suma(operador1, operador2);
+                    break;
+                case 2:
+                    resta(operador1, operador2);
+                    break;
+                case 3:
+                    multiplica(operador1, operador2);
+                    break;
+                case 4:
+                    divide(operador1, operador2);
+                    break;
+                default:
+                    System.out.println("Opcion pulsada no valida");
+                    break;
+            }
+            System.out.println("");
+
+
+        }
     }
 
     public static float divide(int operador1, int operador2) {
@@ -48,21 +72,21 @@ imprimeMenu();
 
     public static void preguntaOperadores() throws IOException {
         System.out.println("Operador 1: ");
-        BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
-        operador1=Integer.parseInt(br1.readLine());
+        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
+        operador1 = Integer.parseInt(br1.readLine());
         System.out.println("Operador 2: ");
-        BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
-        operador2=Integer.parseInt(br2.readLine());
+        BufferedReader br2 = new BufferedReader(new InputStreamReader(System.in));
+        operador2 = Integer.parseInt(br2.readLine());
     }
 
     public static void preguntaOpcion() throws IOException {
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        opcion=Integer.parseInt(br.readLine());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        opcion = Integer.parseInt(br.readLine());
     }
 
     public static void imprimeMenu() {
         //Logger log= (Logger) LogManager.getLogger(this.getClass()); //Para métodos no estáticos.
-        Logger log= (Logger) LogManager.getLogger();
+        Logger log = (Logger) LogManager.getLogger();
         log.error("Menu Opciones");
         log.warn("1. Suma");
         log.debug("2. Resta");
