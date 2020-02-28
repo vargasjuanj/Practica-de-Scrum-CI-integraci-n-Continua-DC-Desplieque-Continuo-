@@ -12,11 +12,12 @@ public class Calculadora {
     public static int opcion, operador1, operador2, resultado;
     public static float resultado2;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
         imprimeMenu();
-
+        preguntaOpcion();
         while (opcion != 5) {
-
+            preguntaOperadores();
             switch (opcion) {
                 case 1:
                     suma(operador1, operador2);
@@ -31,14 +32,15 @@ public class Calculadora {
                     divide(operador1, operador2);
                     break;
                 default:
-                    System.out.println("La opción ingresada no es valida.");
-
+                    System.out.println("Opcion pulsada no valida");
                     break;
             }
             System.out.println("");
-
-
+            imprimeMenu();
+            preguntaOpcion();
         }
+        System.out.println("Fin de aplicacion");
+
     }
 
     public static float divide(int operador1, int operador2) {
