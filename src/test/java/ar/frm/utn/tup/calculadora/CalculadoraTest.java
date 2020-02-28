@@ -24,4 +24,11 @@ public class CalculadoraTest {
         assertEquals(expected, result);
 
     }
+
+    @Test
+    public void testDivide(){
+        float expected = 8f/5;
+        float result = this.calculadora.divide(8, 5);
+        assertEquals(expected, result,0);
+    }
 }
