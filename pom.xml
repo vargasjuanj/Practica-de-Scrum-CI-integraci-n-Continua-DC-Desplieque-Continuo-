@@ -8,7 +8,7 @@
 
     <artifactId>calculadora</artifactId>
     <groupId>ar.frm.utn</groupId>
-    <version>1.2.0-SNAPSHOT</version>
+    <version>1.2.0-Release</version>
     <packaging>jar</packaging>
 
     <name>${project.groupId}.${project.artifactId}</name>
