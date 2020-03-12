@@ -8,7 +8,7 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/vargasjuanj/Calculadora?branch=develop)](https://bettercodehub.com/)
 [![Heroku broken](https://calculadora-utn.herokuapp.com/system/version-badge)](https://calculadora-utn.herokuapp.com/swagger-ui.html)
 ## Ecosistema
-* Java
+* Java7
 * Maven
 * Logs
 * JUnit5
