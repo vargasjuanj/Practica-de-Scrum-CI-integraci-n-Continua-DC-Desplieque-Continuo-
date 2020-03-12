@@ -21,8 +21,6 @@
 * Spring
 * Heroku
 * OpenAPI-Swagger
-testjjv
-
 ## Teoria
 
 https://www.youtube.com/watch?v=SOj64CrWYY8
