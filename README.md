@@ -21,8 +21,6 @@
 * Spring
 * Heroku
 * OpenAPI-Swagger
-juan
-jose
 
 ## Teoria
 
