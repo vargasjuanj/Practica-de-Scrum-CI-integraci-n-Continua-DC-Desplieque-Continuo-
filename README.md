@@ -22,7 +22,6 @@
 * Heroku
 * OpenAPI-Swagger
 
-
 ## Teoria
 
 https://www.youtube.com/watch?v=SOj64CrWYY8
